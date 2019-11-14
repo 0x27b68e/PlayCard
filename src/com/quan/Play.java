@@ -38,7 +38,7 @@ public class Play {
 		} else if(distinctCount == 2) {
 			category = ranks.count(first) == 3 ? CategoryContanst.FULL_HOUSE : CategoryContanst.FOUR_CARDS;
 		} else {
-			category = "@@";
+			category = "__";
 		}
 		System.out.println(category);
 		
