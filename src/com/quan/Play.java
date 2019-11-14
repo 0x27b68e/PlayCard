@@ -25,17 +25,12 @@ public class Play {
 			ranks.add(card.rank);
 		}
 		
-		System.out.println("rank: " + ranks);
-		System.out.println("suits: " +suits);
-		
 		for (Entry<Rank> entry : ranks.entrySet()) {
 			distinctRanks.addFirst(entry.getElement());
 		}
 		
 		Rank first = distinctRanks.getFirst();
-		System.out.println("last of distinctRanks: " + first);
 		int distinctCount = distinctRanks.size();
-		System.out.println(distinctCount);
 		if(distinctCount == 4) {
 			category = CategoryContanst.ONE_PAIR;
 		} else if(distinctCount == 3) {
